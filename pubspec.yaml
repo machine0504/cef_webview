@@ -1,0 +1,34 @@
+name: cef_webview
+description: >-
+  基于 CEF 99（Chromium Embedded Framework）离屏渲染（OSR）的 Flutter 桌面端内嵌浏览器插件，
+  通过 Flutter Texture 管线显示网页，支持 Windows / macOS / Linux 三端统一 API。
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.13.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 运行期下载 CEF 的 sha256 校验。运行时目录用环境变量按统一公式推导
+  # （见 cef_runtime_manager.dart 的 _baseDir），与各端 native 保持一致，故不依赖 path_provider。
+  crypto: ^3.0.0
+  # 拖拽上传：接住 OS 拖入 webview 的文件，转发给 CEF 的 DragTarget 时序。
+  desktop_drop: ^0.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  plugin:
+    platforms:
+      linux:
+        pluginClass: CefWebviewPlugin
+      windows:
+        pluginClass: CefWebviewPluginCApi
+      macos:
+        pluginClass: CefWebviewPlugin

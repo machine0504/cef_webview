@@ -1,0 +1,25 @@
+{
+  "cefVersion": "144.0.29+g0b1a012+chromium-144.0.7559.256",
+  "packages": {
+    "windows-x64": {
+      "url": "144.0.29-g0b1a012-chromium-144.0.7559.256/windows-x64.tar.gz",
+      "size": 0,
+      "sha256": "<由 make_cef_runtime.sh 自动填入>"
+    },
+    "linux-x64": {
+      "url": "144.0.29-g0b1a012-chromium-144.0.7559.256/linux-x64.tar.gz",
+      "size": 0,
+      "sha256": "<由 make_cef_runtime.sh 自动填入>"
+    },
+    "macos-arm64": {
+      "url": "144.0.29-g0b1a012-chromium-144.0.7559.256/macos-arm64.tar.gz",
+      "size": 0,
+      "sha256": "<由 make_cef_runtime.sh 自动填入>"
+    },
+    "macos-x64": {
+      "url": "144.0.29-g0b1a012-chromium-144.0.7559.256/macos-x64.tar.gz",
+      "size": 0,
+      "sha256": "<由 make_cef_runtime.sh 自动填入>"
+    }
+  }
+}
