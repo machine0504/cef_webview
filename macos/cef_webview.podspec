@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.description      = 'Off-Screen Rendering webview backed by CEF 99 for Flutter macOS.'
   s.homepage         = 'https://example.com'
   s.license          = { :type => 'Proprietary' }
-  s.author           = { 'lzccb' => 'dev@lzccb.com' }
+  s.author           = { 'machine0504' => 'machine0504@users.noreply.github.com' }
   s.source           = { :path => '.' }
 
   s.platform         = :osx, '10.13'
